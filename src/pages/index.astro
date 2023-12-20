@@ -1,0 +1,117 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Link from "../components/Link.astro";
+import TeamList from "../components/TeamList.astro";
+import PhDownloadFill from "../components/PhDownloadFill.astro";
+import PhMagnifyingGlassBold from "../components/PhMagnifyingGlassBold.astro";
+---
+
+<Layout title="Strato - Nintendo Switch Emulator">
+	<Navbar />
+	<!-- Landing -->
+	<div class="w-full md:h-full">
+		<div class="mx-auto max-w-screen-xl px-5 py-24 md:py-36">
+			<div class="flex flex-row">
+				<div class="w-full px-4 md:py-10">
+					<h2 class="mb-5 flex justify-center md:hidden md:justify-start">
+						<img class="h-24 w-24 rounded-full bg-black dark:border-white" src="icons/strato-logo.svg" alt="Strato logo" />
+					</h2>
+					<div class="font-inter mb-10 lg:mt-6">
+						<h2 class="mb-6 text-center text-3xl font-bold leading-8 tracking-tight dark:text-white sm:text-4xl md:text-left">
+							Strato<br />
+							<span class="inline-block pt-3 text-2xl text-blue-500">Nintendo Switch™ Emulator for Android™<br /></span>
+						</h2>
+						<p class="text-center text-base dark:text-white md:text-left md:text-lg">
+							Strato is an open source and experimental emulator that runs on ARMv8 Android™ devices and emulates the functionality of a Nintendo Switch™ system.
+						</p>
+					</div>
+					<ul class="flex flex-wrap items-center justify-center fill-blue-600 font-medium uppercase text-blue-600 dark:fill-blue-500 dark:text-blue-500 md:justify-start">
+						<span
+							class="m-2 flex justify-center rounded-md border-[1.5px] border-black/10 transition-colors duration-200 hover:bg-gray-800/5 focus:outline-none dark:border-white/10 dark:hover:bg-blue-500/5"
+						>
+							<a href="/download" class="flex items-center justify-center space-x-2 px-4 py-2">
+								<PhDownloadFill class="text-white" />
+								<span>Get Strato</span>
+							</a>
+						</span>
+						<span
+							class="m-2 flex justify-center rounded-md border-[1.5px] border-black/10 transition-colors duration-200 hover:bg-gray-800/5 focus:outline-none dark:border-white/10 dark:hover:bg-blue-500/5"
+						>
+							<a href="#about" class="flex items-center justify-center space-x-2 px-4 py-2">
+								<PhMagnifyingGlassBold />
+								<span>Learn More</span>
+							</a>
+						</span>
+					</ul>
+					<div class="clients items-baseline pt-16">
+						<h6 class="font-inter text-body-color flex items-center text-sm font-bold uppercase text-gray-500 dark:text-white">Built using</h6>
+						<div class="flex w-52 items-center">
+							<div>
+								<img class="block dark:hidden" src="icons/vk.svg" alt="Vulkan Logo" />
+								<img class="hidden dark:block" src="icons/vk-light.svg" alt="Vulkan Logo Light" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About -->
+	<div class="font-inter w-full pb-12 pt-10 md:pb-32 lg:h-full" id="about">
+		<div class="mx-auto max-w-screen-xl px-8">
+			<div class="mx-auto flex max-w-6xl flex-col md:flex-row">
+				<div class="mr-8 flex w-full flex-col md:w-1/3">
+					<h2 class="mb-4 flex flex-row justify-center text-3xl font-extrabold leading-9 dark:text-white md:justify-start">
+						About Strato
+						<img class="ml-3 h-10 w-10 rounded-full" src="icons/strato-logo.svg" alt="Strato logo" />
+					</h2>
+					<div class="mb-16 pt-3 text-center dark:text-white md:pr-16 md:text-left">
+						<p>Strato is designed to provide an accurate, performant, and user-friendly emulation experience through an ARM Compatibility Layer and System Emulation.</p>
+					</div>
+				</div>
+				<div class="w-full text-center md:w-2/3 md:text-left">
+					<div class="mb-4">
+						<h3 class="text-xl font-semibold text-blue-500">Who develops Strato?</h3>
+					</div>
+					<div class="mb-8 dark:text-white">
+						<p>
+							The Strato Project, while currently led by Lynx, was composed of a team of open-source developers. See the
+							<Link className="font-bold underline" href="#team">Team</Link>
+							 section for more information.
+						</p>
+					</div>
+					<div class="mb-4">
+						<h3 class="text-xl font-semibold text-blue-500">Where does the name come from?</h3>
+					</div>
+					<div class="mb-8 dark:text-white">
+						<p>The Nintendo Switch™ system software is codenamed Horizon. Strato is a synonym and alludes to that software.</p>
+					</div>
+					<div class="mb-4">
+						<h3 class="text-xl font-semibold text-blue-500">How can I contribute to Strato?</h3>
+					</div>
+					<div class="mb-8 dark:text-white">
+						<p>
+							As an open source project, the Strato team greatly encourages contributions of any kind. If you'd like to contribute, join the
+							<Link href="https://discord.gg/YhpdhVBmXX">Discord</Link>
+							 and read the
+							<Link href="https://github.com/strato-emu/strato/blob/master/CONTRIBUTING.md">Contributing Guide.</Link>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Team -->
+	<div class="font-roboto w-full pt-10 lg:h-full" id="team">
+		<div class="mx-auto max-w-screen-xl px-8">
+			<div class="mb-20">
+				<div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
+					<h3 class="mb-6 text-3xl font-bold text-black dark:text-white">Our Team</h3>
+					<p class="mb-6 pb-2 font-semibold text-blue-500 md:mb-12 md:pb-0">The Strato Team is composed of passionate individuals from all around the world 🌐</p>
+				</div>
+				<TeamList />
+			</div>
+		</div>
+	</div>
+</Layout>

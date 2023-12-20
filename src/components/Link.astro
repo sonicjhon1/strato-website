@@ -1,0 +1,10 @@
+---
+interface Props {
+	href: string;
+	className?: string | undefined;
+}
+
+const { href, className } = Astro.props;
+---
+
+<a class={`font-bold text-blue-600 underline ${className}`} {href}><slot /></a>
