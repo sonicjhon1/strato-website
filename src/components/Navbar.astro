@@ -1,6 +1,8 @@
 ---
 import BiDiscord from "../components/BiDiscord.astro";
 import BiGithub from "../components/BiGithub.astro";
+import PhList from "../components/PhList.astro";
+import PhX from "../components/PhX.astro";
 ---
 
 <nav class="mx-auto flex h-20 max-w-screen-xl items-center px-8">
@@ -33,7 +35,27 @@ import BiGithub from "../components/BiGithub.astro";
 			/>
 		</a>
 	</div>
-  <div class="hidden ml-auto fill-gray-500 dark:fill-white max-sm:flex">
-    hamburger icon (todo)
-  </div>
+	<div id="hamburger" class="ml-auto hidden cursor-pointer fill-gray-500 max-sm:flex">
+		<PhList id="hamburger-icon" class="h-11 w-11" />
+		<PhX id="hamburger-icon-close" class="hidden h-11 w-11" />
+	</div>
 </nav>
+<!-- Dropdown for mobile -->
+<div class="hidden" id="hamburger-list">
+	<div class="space-y-1 px-2 pb-3 pt-2 text-base font-medium text-gray-500 dark:text-white sm:px-3">
+		<a href="/#" class="block rounded-md px-3 py-2 transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500"> Home</a>
+		<a href="/#about" class="block rounded-md px-3 py-2 transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500"> About</a>
+		<a href="/#team" class="block rounded-md px-3 py-2 transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500"> Team</a>
+		<a href="/download" class="block rounded-md px-3 py-2 transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500"> Download</a>
+	</div>
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		document.getElementById("hamburger")?.addEventListener("click", () => {
+			document.getElementById("hamburger-list")?.classList.toggle("hidden");
+			document.getElementById("hamburger-icon")?.classList.toggle("hidden");
+			document.getElementById("hamburger-icon-close")?.classList.toggle("hidden");
+		});
+	});
+</script>
