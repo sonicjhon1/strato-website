@@ -1,5 +1,4 @@
 ---
-import Link from "./Link.astro";
 import BiGithub from "./BiGithub.astro";
 
 const app_developers = [
@@ -135,16 +134,16 @@ const team = {
 							<img class="rounded-full" alt={member.name} src={member.avatar} />
 						</div>
 						<div>
-							<div class="w-58 flex h-14 items-end ">
+							<div class="w-58 flex h-14 items-end">
 								<div class="ml-1 mt-2">
 									<div class="font-inter text-left text-2xl text-stone-600 dark:text-zinc-300">{member.name}</div>
 								</div>
 							</div>
-							<div class="w-58 flex h-14 items-start  ">
+							<div class="w-58 flex h-14 items-start">
 								<div class="ml-1 mt-2">
-									<Link href={member.github}>
+									<a href={member.github} target="_blank">
 										<BiGithub class="h-6 w-6 fill-stone-700 dark:fill-zinc-300" alt="Github profile" />
-									</Link>
+									</a>
 								</div>
 							</div>
 						</div>
