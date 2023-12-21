@@ -13,13 +13,13 @@ import PhX from "../components/PhX.astro";
 			<div class="rounded-md text-xs uppercase text-gray-500">Emulator</div>
 		</div>
 	</a>
-	<div class="ml-12 flex flex-1 space-x-8 text-sm font-bold uppercase text-gray-500 dark:text-white max-sm:hidden">
-		<a class="transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500 md:ml-2" href="/#">Home</a>
-		<a class="transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500 md:ml-2" href="/#about">About</a>
-		<a class="transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500 md:ml-2" href="/#team">Team</a>
-		<a class="transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500 md:ml-2" href="/download">Download</a>
+	<div class="ml-12 flex flex-1 space-x-8 text-sm font-bold uppercase text-gray-500 max-sm:hidden dark:text-white">
+		<a class="transition-colors duration-200 hover:text-gray-800 focus:outline-none md:ml-2 dark:hover:text-blue-500" href="/#">Home</a>
+		<a class="transition-colors duration-200 hover:text-gray-800 focus:outline-none md:ml-2 dark:hover:text-blue-500" href="/#about">About</a>
+		<a class="transition-colors duration-200 hover:text-gray-800 focus:outline-none md:ml-2 dark:hover:text-blue-500" href="/#team">Team</a>
+		<a class="transition-colors duration-200 hover:text-gray-800 focus:outline-none md:ml-2 dark:hover:text-blue-500" href="/download">Download</a>
 	</div>
-	<div class="flex fill-gray-500 dark:fill-white max-sm:hidden">
+	<div class="flex fill-gray-500 max-sm:hidden dark:fill-white">
 		<a href="https://github.com/strato-emu/strato" target="_blank">
 			<BiGithub
 				src="icons/github-mark-white.svg"
@@ -42,7 +42,7 @@ import PhX from "../components/PhX.astro";
 </nav>
 <!-- Dropdown for mobile -->
 <div class="hidden" id="hamburger-list">
-	<div class="space-y-1 px-2 pb-3 pt-2 text-base font-medium text-gray-500 dark:text-white sm:px-3">
+	<div class="space-y-1 px-2 pb-3 pt-2 text-base font-medium text-gray-500 sm:px-3 dark:text-white">
 		<a href="/#" class="block rounded-md px-3 py-2 transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500"> Home</a>
 		<a href="/#about" class="block rounded-md px-3 py-2 transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500"> About</a>
 		<a href="/#team" class="block rounded-md px-3 py-2 transition-colors duration-200 hover:text-gray-800 focus:outline-none dark:hover:text-blue-500"> Team</a>
