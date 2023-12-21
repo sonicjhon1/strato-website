@@ -5,9 +5,9 @@
     <a href="https://discord.gg/YhpdhVBmXX" target="_blank">
         <img src="https://img.shields.io/discord/1104386300750082081.svg?label=&logo=discord&logoColor=ffffff&color=5865F2&labelColor=404EED">
     </a>
-    <!--<a href="https://github.com/skyline-emu/website/actions/workflows/deploy.yml" target="_blank">
-        <img src="https://github.com/skyline-emu/website/actions/workflows/deploy.yml/badge.svg"><br>
-    </a>-->
+    <a href="https://github.com/sonicjhon1/strato-website/actions/workflows/astro.yml" target="_blank">
+        <img src="https://github.com/sonicjhon1/strato-website/actions/workflows/astro.yml/badge.svg"><br>
+    </a>
 </h1>
 
 <p align="center">
