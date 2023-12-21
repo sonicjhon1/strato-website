@@ -131,7 +131,7 @@ const team = {
 				{role[1].map((member) => (
 					<div class="flex items-center overflow-hidden rounded-lg bg-gradient-to-b from-stone-200 to-stone-300 dark:from-zinc-800 dark:to-zinc-900">
 						<div class="mx-3 w-[5rem] shrink-0 ">
-							<img class="rounded-full" alt={member.name} src={member.avatar} />
+							<img class="rounded-full" alt={member.name} src={member.avatar} loading="lazy" decoding="async" />
 						</div>
 						<div>
 							<div class="w-58 flex h-14 items-end">
